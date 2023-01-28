@@ -32,7 +32,7 @@ class TestProduct:
         assert responce.json().get("info") == "infoTest"
         assert responce.json().get("id") == 0
 
-    def test_get_not    _empty_product(self):
+    def test_get_not_empty_product(self):
         responce = requests.get(f'{api_url}/v1/product')
         assert responce.status_code == 200
         assert len(responce.json()) == 1
