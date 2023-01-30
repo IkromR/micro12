@@ -19,7 +19,7 @@ class TestProduct:
         assert responce.status_code == 200
         assert responce.json().get("model") == "modelTest"
         assert responce.json().get("name") == "nameTest"
-        assert responce.json().get("info") == "infoTest"
+        assert responce.json().get("info") == "infoTestdsds"
         assert responce.json().get("id") == 0
 
     def test_get_product_by_id(self):
